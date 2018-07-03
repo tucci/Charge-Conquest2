@@ -1,0 +1,18 @@
+<behavior-tree>
+  <sequence>
+    <leaf name="wait" />
+    <selector>
+      <leaf name="pickRandomFiringMode" />
+      <selector>        
+        <sequence>
+          <condition name="targetSquadCountLow" />
+          <leaf name="focusFire" />
+        </sequence>
+        <sequence>
+          <condition name="targetSquadCountHigh" />
+          <leaf name="SpreadOutFire" />
+        </sequence>
+      </selector>
+    </selector>
+  </sequence>
+</behavior-tree>

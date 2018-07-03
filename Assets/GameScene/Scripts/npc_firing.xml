@@ -1,0 +1,37 @@
+<behavior-tree>
+  <sequence>
+    <leaf name="waitForGunChange" />
+    <selector>
+      <leaf name="pickRandomGun" />
+      <selector>
+        <sequence>
+          <condition name="lowHealth" />
+          <selector>
+            <leaf name="shotgun" />
+            <leaf name="rifle" />
+          </selector>
+        </sequence>
+        <sequence>
+          <condition name="highHealth" />
+          <selector>
+            <leaf name="ak" />
+            <leaf name="shotgun" />
+          </selector>
+        </sequence>
+        <sequence>
+          <condition name="lowVelocity" />
+          <selector>
+            <leaf name="shotgun" />
+            <leaf name="rifle" />
+          </selector>
+        </sequence>
+        <sequence>
+          <condition name="highVelocity" />
+          <selector>
+            <leaf name="ak" />
+          </selector>
+        </sequence>
+      </selector>
+    </selector>
+  </sequence>
+</behavior-tree>

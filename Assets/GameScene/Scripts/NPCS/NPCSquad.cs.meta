@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6bd5e1b7261d4c747860fd237d5feec0
+timeCreated: 1523299817
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - NPCPrefab: {fileID: 1735046884846128, guid: f46558e06371ef24d93a9e09c1db48a6,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
